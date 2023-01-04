@@ -1,0 +1,29 @@
+{
+  "UNI001": {
+    "name": "John",
+    "courseName": "Btech3",
+    "currentSemester": 3,
+    "firstSemesterMarks": 55,
+    "secondSemesterMarks": 55,
+    "thirdSemesterMarks": 55,
+    "completed": 0
+  },
+  "UNI002": {
+    "name": "Peter",
+    "courseName": "Btech3",
+    "currentSemester": 3,
+    "firstSemesterMarks": 75,
+    "secondSemesterMarks": 55,
+    "thirdSemesterMarks": 95,
+    "completed": 0
+  },
+  "UNI003": {
+    "name": "Carl",
+    "courseName": "Btech3",
+    "currentSemester": 3,
+    "firstSemesterMarks": 5,
+    "secondSemesterMarks": 5,
+    "thirdSemesterMarks": 65,
+    "completed": 0
+  }
+}

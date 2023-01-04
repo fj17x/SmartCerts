@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body onload="connect()">
+	<div>
+		<div style="border: 1px solid black; padding:1rem;margin:1rem">
+			<h2>Creating certificate</h2>
+			<button disabled>Click here to connect</button> <br> <br>
+
+			<!-- <input type="text" placeholder="dob in unix time" id="dob"><br> <br> -->
+			<!-- <input type="text" placeholder="attendance" id="att"><br> <br> -->
+			<input type="text" placeholder="id" id="id"><br> <br>
+			<!-- <input type="text" placeholder="course" id="course"><br> <br> -->
+
+			<button onclick="callIssueCertificate()">Click here to create a certificate for the given student
+				ID</button> <br> <br>
+			<button onclick="callCurrentCertificateId()">Click here to check current number</button> <br><br>
+		</div>
+		<div style="border: 1px solid black; padding:1rem;margin:1rem">
+			<h2>Modify/View certificate</h2>
+			<input type="text" id="check" placeholder="enter number "> <br> <br>
+			<button onclick="revokeNumbered()">Click here to revoke a certificate using a given number</button><br><br>
+			<button onclick="showDetails()">Click here display a certificate using a given number</button> <br> <br>
+			<button onclick="verifyCertificate()">Click here to verify if exists using a given number</button> <br> <br>
+			<button onclick="getIPFSlink()">Show in IPFS</button> <br> <br>
+		</div>
+
+		<button onclick="showDetailsOfAll()">Click here display all certificates</button> <br> <br>
+
+
+	</div>
+	<div class="ipfsLink"></div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.1/web3.min.js"
+		integrity="sha512-vtUOC0YIaNm/UutU7yfnwqnF9LOYnXtpHe2kwi1nvJNloeGQuncNBiEKP/3Ww3D62USAhbXGsnYpAYoiDsa+wA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/ipfs-http-client@48.2.2/dist/index.min.js"></script>
+	<script src="https://bundle.run/buffer@6.0.3"></script>
+	<script src="ipfs.js"></script>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
